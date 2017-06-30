@@ -1,0 +1,39 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+        maven {
+            url 'https://repo.enonic.com/public'
+        }
+    }
+
+    dependencies {
+        classpath 'com.enonic.gradle:gradle-defaults:1.0.1'
+    }
+}
+
+apply plugin: 'com.enonic.defaults'
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'maven'
+
+repositories {
+    jcenter()
+    maven {
+        url 'http://repo.enonic.com/public'
+    }
+}
+
+dependencies {
+    compile "com.enonic.xp:portal-api:${xpVersion}"
+    testCompile 'junit:junit:4.12'
+    testCompile "com.enonic.xp:testing:${xpVersion}"
+    compile 'net.sf.saxon:Saxon-HE:9.5.1-8'
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+}
