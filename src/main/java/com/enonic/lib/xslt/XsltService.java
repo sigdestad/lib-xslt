@@ -1,4 +1,4 @@
-package com.enonic.xp.lib.xslt;
+package com.enonic.lib.xslt;
 
 import java.util.function.Supplier;
 
@@ -7,7 +7,7 @@ import javax.xml.transform.TransformerFactory;
 import net.sf.saxon.Configuration;
 import net.sf.saxon.TransformerFactoryImpl;
 
-import com.enonic.xp.lib.xslt.function.XsltFunctionLibrary;
+import com.enonic.lib.xslt.function.XsltFunctionLibrary;
 import com.enonic.xp.portal.view.ViewFunctionService;
 import com.enonic.xp.resource.ResourceService;
 import com.enonic.xp.script.bean.BeanContext;

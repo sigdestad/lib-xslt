@@ -1,4 +1,4 @@
-package com.enonic.xp.lib.xslt;
+package com.enonic.lib.xslt;
 
 import org.junit.Test;
 
@@ -16,14 +16,14 @@ public class XsltServiceTest
     {
         super.initialize();
         this.service = new XsltService();
-        this.service.initialize( newBeanContext( ResourceKey.from( "myapp:/site" ) ) );
+        this.service.initialize( newBeanContext( ResourceKey.from( "myapp:/test" ) ) );
     }
 
     @Test
     public void testProcess()
     {
         final XsltProcessor processor = this.service.newProcessor();
-        processor.setView( ResourceKey.from( "myapp:/site/view/simple.xsl" ) );
+        processor.setView( ResourceKey.from( "myapp:/test/view/simple.xsl" ) );
         processor.setModel( null );
         processor.process();
     }

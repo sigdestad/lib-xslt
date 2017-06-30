@@ -1,4 +1,5 @@
-var xslt = require('/lib/xp/xslt');
+var assert = require('/lib/xp/assert');
+var xslt = require('/lib/xslt');
 
 function assertXmlEquals(res, actual) {
     testInstance.assertXmlEquals(resolve(res), actual);
@@ -30,6 +31,6 @@ exports.testUrlFunctions = function () {
     assertXmlEquals('view/url-functions-result.xml', result);
 };
 
-exports.testExamples = function () {
-    testInstance.runScript('/site/lib/xp/examples/xslt/render.js')
+exports.testCompatibility = function () {
+    assert.assertTrue(xslt === require('/lib/xp/xslt'));
 };

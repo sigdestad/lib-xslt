@@ -1,4 +1,4 @@
-package com.enonic.xp.lib.xslt;
+package com.enonic.lib.xslt;
 
 import java.util.Iterator;
 import java.util.List;

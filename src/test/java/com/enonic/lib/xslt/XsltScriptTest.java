@@ -1,4 +1,4 @@
-package com.enonic.xp.lib.xslt;
+package com.enonic.lib.xslt;
 
 import org.junit.Assert;
 
@@ -12,7 +12,7 @@ public class XsltScriptTest
     @Override
     public String getScriptTestFile()
     {
-        return "/site/xslt-test.js";
+        return "/test/xslt-test.js";
     }
 
     private void assertXmlEquals( final String expectedXml, final String actualXml )

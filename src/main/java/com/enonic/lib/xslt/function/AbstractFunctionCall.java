@@ -1,4 +1,4 @@
-package com.enonic.xp.lib.xslt.function;
+package com.enonic.lib.xslt.function;
 
 import net.sf.saxon.lib.ExtensionFunctionCall;
 import net.sf.saxon.om.Item;

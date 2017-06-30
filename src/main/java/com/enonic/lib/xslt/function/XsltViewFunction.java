@@ -1,4 +1,4 @@
-package com.enonic.xp.lib.xslt.function;
+package com.enonic.lib.xslt.function;
 
 import java.util.function.Supplier;
 
