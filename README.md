@@ -8,6 +8,11 @@ Xslt Library for Enonic XP
 This library implements an xslt rendering method that can be used in your apps. See documentation
 here: https://enonic-docs.s3.amazonaws.com/com.enonic.lib/lib-xslt/index.html
 
+## Releases and compatibility
+
+| App Version   | XP version |
+| ------------- | ---------- |
+| 1.0.0 | 6.11.0 |
 
 ## Building
 
