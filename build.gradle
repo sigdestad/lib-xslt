@@ -1,27 +1,15 @@
-buildscript {
-    repositories {
-        mavenLocal()
-        jcenter()
-        maven {
-            url 'https://repo.enonic.com/public'
-        }
-    }
-
-    dependencies {
-        classpath 'com.enonic.gradle:gradle-defaults:1.0.1'
-    }
+plugins {
+    id 'java'
+    id 'jacoco'
+    id 'maven'
+    id 'com.enonic.defaults' version '1.0.3'
+    id 'com.enonic.xp.doc' version '1.0.7'
 }
 
-apply plugin: 'com.enonic.defaults'
-apply plugin: 'java'
-apply plugin: 'jacoco'
-apply plugin: 'maven'
-
 repositories {
+    mavenLocal()
     jcenter()
-    maven {
-        url 'http://repo.enonic.com/public'
-    }
+    xp.enonicRepo()
 }
 
 dependencies {
@@ -36,4 +24,10 @@ jacocoTestReport {
         xml.enabled = true
         html.enabled = true
     }
+}
+
+check.dependsOn jacocoTestReport
+
+artifacts {
+    archives jar
 }
