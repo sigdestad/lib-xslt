@@ -4,7 +4,6 @@ image::https://img.shields.io/badge/xp-6.+-blue.svg[role="right"]
 
 This library provides basic XSLT rendering functionality to create pages and parts using XSLT as the templating language.
 
-image::images/kitchen.jpg[]
 image::images/secondary/bedroom.jpg[]
 audio::images/song.mp3[]
 video::images/video.mp4[]
