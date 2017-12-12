@@ -1,54 +1,31 @@
-plugins {
-    id 'java'
-    id 'jacoco'
-    id 'maven'
-    id 'com.enonic.defaults' version '1.0.3'
-    id 'com.enonic.xp.doc' version '1.0.14'
-}
+buildscript {
+    repositories {
+        jcenter()
+    }
 
-repositories {
-    mavenLocal()
-    jcenter()
-    xp.enonicRepo()
-}
-
-dependencies {
-    compile 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.6'
-    compile "com.enonic.xp:portal-api:${xpVersion}"
-    testCompile 'junit:junit:4.12'
-    testCompile "com.enonic.xp:testing:${xpVersion}"
-    compile 'net.sf.saxon:Saxon-HE:9.5.1-8'
+    dependencies {
+        classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.6'
+    }
 }
 
 apply plugin: 'org.asciidoctor.convert'
 
 asciidoctor {
-    sourceDir = file('docs')
-    outputDir = file('build/docs')
+    sourceDir = file( 'docs' )
+    outputDir = file( 'build/docs' )
 
-    attributes  'icons': 'font',
-                'sectanchors': true,
-                'sectlinks': true,
-                'linkattrs': true,
-                'encoding': 'utf-8',
-                'idprefix': '',
-                'toc': 'right',
-                'toclevels': 2,
-                'nofooter': '',
-                'source-highlighter': 'coderay',
-                'coderay-linenums-mode': 'table',
-                'version': this.project.getVersion()
+    attributes 'icons': 'font',
+               'sectanchors': true,
+               'sectlinks': true,
+               'linkattrs': true,
+               'encoding': 'utf-8',
+               'idprefix': '',
+               'toc': 'right',
+               'toclevels': 2,
+               'nofooter': '',
+               'source-highlighter': 'coderay',
+               'coderay-linenums-mode': 'table',
+               'version': this.project.getVersion()
 }
 
-jacocoTestReport {
-    reports {
-        xml.enabled = true
-        html.enabled = true
-    }
-}
 
-check.dependsOn jacocoTestReport
-
-artifacts {
-    archives jar
-}
