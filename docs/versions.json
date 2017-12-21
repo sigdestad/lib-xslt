@@ -5,7 +5,8 @@
   },
   {
     "label": "1.0.2",
-    "checkout": "ff196a27c481e5fb667d970c0303ba4f145dc652"
+    "checkout": "ff196a27c481e5fb667d970c0303ba4f145dc652",
+    "latest": true
   },
   {
     "label": "1.0.3",
