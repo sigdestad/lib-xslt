@@ -1,0 +1,5 @@
+****
+This doc is included via include directive
+
+See more in link:http://asciidoctor.org/docs/user-manual/#include-directive[Documentation]
+****

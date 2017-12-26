@@ -1,0 +1,5 @@
+= Linked doc at root level
+
+****
+This is a separate doc
+****
