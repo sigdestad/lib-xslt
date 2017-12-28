@@ -3,3 +3,5 @@
 ****
 This is a separate doc
 ****
+
+link:index.html[Link index.html]
