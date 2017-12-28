@@ -3,3 +3,5 @@ More test data
 ****
 
 link:../../index.html[Link to root doc index.html]
+
+link:../some_deep_data.html[Link to other doc]
