@@ -10,7 +10,7 @@
         },
         {
           "title": "Some deep data",
-          "document": "some_deep_data",
+          "document": "namesake/some_deep_data",
           "menuItems": [
             {
               "title": "More deep data",
