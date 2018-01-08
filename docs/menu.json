@@ -1,13 +1,9 @@
 {
   "menuItems": [
     {
-      "title": "Index",
-      "document": "index",
+      "title": "Included",
+      "document": "includes/included",
       "menuItems": [
-        {
-          "title": "Included",
-          "document": "includes/included"
-        },
         {
           "title": "Some deep data",
           "document": "namesake/some_deep_data",
