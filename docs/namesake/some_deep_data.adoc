@@ -1,3 +1,5 @@
+= Some deeply hidden data
+
 ****
 More test data
 ****
