@@ -12,6 +12,10 @@
     {
       "label": "1.0.3",
       "checkout": "d843a5af87ed28b09465d8e17c206c189542c52f"
+    },
+    {
+      "label": "master",
+      "checkout": "master"
     }
   ]
 }
