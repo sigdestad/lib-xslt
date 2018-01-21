@@ -6,12 +6,12 @@
     },
     {
       "label": "1.0.3",
-      "checkout": "d843a5af87ed28b09465d8e17c206c189542c52f"
+      "checkout": "d843a5af87ed28b09465d8e17c206c189542c52f",
       "latest": true
     },
     {
       "label": "1.0.2",
-      "checkout": "ff196a27c481e5fb667d970c0303ba4f145dc652",
+      "checkout": "ff196a27c481e5fb667d970c0303ba4f145dc652"
     },
     {
       "label": "1.0.1",
